@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <main>
     <header>
         <h1>Guía sobre Control de Versiones y GIT</h1>
     </header>
-    <main>
         <section id="control-versiones">
             <h2>1. ¿Qué es un control de versiones?</h2>
             <p>El control de versiones, también conocido como "control de código fuente", es la práctica de rastrear y gestionar los cambios en el código de software. Los sistemas de control de versiones son herramientas de software que ayudan a los equipos de software
@@ -48,6 +48,12 @@
         <section id="estados">
             <h2>6. ¿Cuáles son los estados en GIT?</h2>
             <p>En GIT, los archivos pueden estar en tres estados: <strong>modificado</strong>, <strong>staged</strong>  y <strong>committed</strong>.</p>
+            <li>Modificado: Un archivo está en estado "modificado" cuando ha sido cambiado en el directorio de trabajo desde el último commit.
+                 Estos cambios no han sido preparados para ser incluidos en el próximo commit.</li>
+                 <li>Commited:Un archivo está en estado "commitado" cuando sus cambios han sido guardados en el historial del repositorio mediante un commit.
+                     Esto significa que los cambios han sido registrados en el repositorio y están disponibles en el historial de commits.</li>
+                     <li>Staged: Un archivo está en estado "preparado" cuando se ha agregado al área de staging con git add. 
+                        Esto significa que los cambios en el archivo están listos para ser incluidos en el próximo commit.</li>
         <img src="img/fund.png">
         </section>
 
@@ -72,20 +78,68 @@
             </ul>
         </section>
 
-        <section id="terminal">
-            <h2>PROBANDO INSTRUCTOR</h2>
-            <p>La terminal, consola o línea de comandos es una interfaz de texto que permite a los usuarios interactuar con el sistema operativo y ejecutar comandos para gestionar archivos y ejecutar programas.</p>
-       
-        </section>
-
-       
+        <section id="comandos-git">
+            <h2>9. Listado de Comandos GIT</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Comando</th>
+                        <th>Funcionamiento</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>git init</code></td>
+                        <td>Inicializa un nuevo repositorio GIT.</td>
+                    </tr>
+                    <tr>
+                        <td><code>git clone &lt;url&gt;</code></td>
+                        <td>Clona un repositorio remoto en tu máquina local.</td>
+                    </tr>
+                    <tr>
+                        <td><code>git add &lt;archivo&gt;</code></td>
+                        <td>Agrega archivos al área de staging.</td>
+                    </tr>
+                    <tr>
+                        <td><code>git commit -m "mensaje"</code></td>
+                        <td>Realiza un commit con un mensaje descriptivo.</td>
+                    </tr>
+                    <tr>
+                        <td><code>git push</code></td>
+                        <td>Envía tus cambios al repositorio remoto.</td>
+                    </tr>
+                    <tr>
+                        <td><code>git pull</code></td>
+                        <td>Descarga y fusiona cambios desde el repositorio remoto.</td>
+                    </tr>
+                    <tr>
+                        <td><code>git branch</code></td>
+                        <td>Muestra, crea o elimina ramas.</td>
+                    </tr>
+                    <tr>
+                        <td><code>git merge &lt;rama&gt;</code></td>
+                        <td>Fusiona cambios de una rama a la actual.</td>
+                    </tr>
+                    <tr>
+                        <td><code>git status</code></td>
+                        <td>Muestra el estado de los archivos en el repositorio.</td>
+                    </tr>
+                    <tr>
+                        <td><code>git log</code></td>
+                        <td>Muestra el historial de commits.</td>
+                    </tr>
+                </tbody>
             </table>
         </section>
     </main>
 
     <footer>
-        <p>Oscar Julian Vargas.</p>
+        <div class="container">
+            <p>&copy; Oscar Vargas.</p>
+        </div>
     </footer>
+
+    
 
 </body>
 </html>
